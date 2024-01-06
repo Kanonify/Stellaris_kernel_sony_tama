@@ -1142,8 +1142,6 @@ int __init early_init_dt_scan_chosen(unsigned long node, const char *uname,
 				fdt_totalsize(initial_boot_params));
 	}
 
-	early_init_dt_check_for_powerup_reason(node);
-
 	/* break now */
 	return 1;
 }
